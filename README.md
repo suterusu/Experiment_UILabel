@@ -1,1 +1,14 @@
 # Experiment_UILabel
+sizeToFit-> sizeThatFits-> textRectForBounds->boundingRectWithSize
+
+numberを指定してい無い場合はtextRectForBoundsは常に無限、またoptionはNSStringDrawingUsesLineFragmentOrigin
+numberを指定している場合、横の幅が0以外なら、その値、それ以外は全て無限
+
+
+lineBreakModeとnumberOfLinesを指定してい無い場合
+lineBreakModeのみ指定されていた場合
+
+幅は高さ共に無視
+
+numberOfLinesが指定されていた場合
+幅のみ制限
